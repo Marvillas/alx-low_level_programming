@@ -1,12 +1,11 @@
 #include <stdio.h>
- /**
-  * The main fuction does not take any input,
-  *  it prints out a statement
-  *  Return: Always 0 (success)
+/**
+  * main - A program tha prints a line with puts function
+  *  Return: Always 0 (successii)
   */
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
 
