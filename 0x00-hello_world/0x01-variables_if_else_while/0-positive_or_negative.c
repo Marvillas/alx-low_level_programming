@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - The program print out either +ve or -ve
  * Return: Always 0 (success)
