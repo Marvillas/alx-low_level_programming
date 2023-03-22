@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_sign - checks for lowercase character
  * @n: the character to check
