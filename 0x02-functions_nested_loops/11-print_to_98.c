@@ -9,10 +9,12 @@
  */
 void print_to_98(int n)
 {
+	int i;
+
 	if (n != 98)
 	{
 		printf("%d", n);
-		for (int i = n + ((n < 98) ? 1 : -1); i != 98; i += ((n < 98) ? 1 : -1))
+		for (i = n + ((n < 98) ? 1 : -1); i != 98; i += ((n < 98) ? 1 : -1))
 		{
 			printf(", %d", i);
 		}
