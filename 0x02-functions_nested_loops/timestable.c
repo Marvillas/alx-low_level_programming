@@ -8,25 +8,20 @@ void times_table(void)
 {
 	int i, j, result;
 
-	/* Print the table header */
-	_putchar('0');
-	for (i = 1; i <= 9; i++)
+	/* for (i = 0; i <= 9; i++)*/
+	/* {*/
+	/*	_putchar(' ');*/
+	/*	_putchar(i + '0');*/
+	/*} */
+	for (i = 0; i <= 9; i++)
 	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(i + '0');
-	}
-	_putchar('\n');
-
-	/* Print the table rows */
-	for (i = 1; i <= 9; i++)
-	{
-		_putchar(i + '0');
-		_putchar(',');
-		_putchar(' ');
-		for (j = 1; j <= 9; j++)
+		/*_putchar(i + '0');*/
+		/*_putchar(' ');*/
+		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
+			_putchar(',');
+			_putchar(' ');
 			if (result < 10)
 			{
 				_putchar(' ');
@@ -36,11 +31,6 @@ void times_table(void)
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
-			}
-			if (j != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
