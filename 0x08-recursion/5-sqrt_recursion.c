@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrt_recursion_helper(n,1));
+		return (sqrt_recursion_helper(n, 1));
 	}
 }
 
@@ -26,7 +26,7 @@ int _sqrt_recursion(int n)
  * sqrt_recursion_helper - helper function to recursively find the square
  * root of a number.
  * @n: integer number to find the square root of
- * @i: 
+ * @i: iterator
  *
  * Return: If n does not have a natural square root, the function should
  * return -1
