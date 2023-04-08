@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrt_recursion_helper(n, 1, n));
+		return (sqrt_recursion_helper(n,1));
 	}
 }
 
@@ -26,33 +26,18 @@ int _sqrt_recursion(int n)
  * sqrt_recursion_helper - helper function to recursively find the square
  * root of a number.
  * @n: integer number to find the square root of
- * @low: the lowest value for the square root.
- * @high: the highest value for the square root.
+ * @i: 
  *
  * Return: If n does not have a natural square root, the function should
  * return -1
  */
-int sqrt_recursion_helper(int n, int low, int high)
+int sqrt_recursion_helper(int n, int i)
 {
-	/* using binary search to find square root */
-	int mid;
+	int sq = i * i;
 
-	if (high < low)
-	{
+	if (sq > n)
 		return (-1);
-	}
-
-	mid = ((high + low) / 2);
-	if ((mid * mid) == n)
-	{
-		return (mid);
-	}
-	else if ((mid * mid) > n)
-	{
-		return (sqrt_recursion_helper(n, low, mid - 1));
-	}
-	else
-	{
-		return (sqrt_recursion_helper(n, mid + 1, high));
-	}
+	if (sq == n)
+		return (i);
+	return (sqrt_recursion_helper(n, i + 1));
 }
