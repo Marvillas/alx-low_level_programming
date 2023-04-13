@@ -70,6 +70,8 @@ char **strtow(char *str)
 			i++;
 		end = i;
 		len = end - start;
+		if (str[end - 1] == '.')
+			len--;
 		tmp = malloc(sizeof(char) * (len + 1));
 		if (!tmp)
 		{
@@ -84,6 +86,5 @@ char **strtow(char *str)
 	}
 
 	word_array[k] = NULL;
-
 	return (word_array);
 }
